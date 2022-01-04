@@ -1,0 +1,48 @@
+<div class="container" style="margin-left: 32%;">
+    <img src="../../assets/logo.png" alt="logo" width="150px" height="150px"
+        style="margin-left: -38px; border-radius: 34px; border: 2px solid orangered;">
+    <br>
+    <br>
+    <form>
+        <h3>Login</h3>
+        <br>
+        <div class="form-group">
+            <label>Username</label>
+            <br><br>
+            <input type="text" name="user" [(ngModel)]="user" #refusrn="ngModel" class="form-control"
+                pattern="[a-zA-Z ]{3,30}" style="margin-left: -50px;width: 190px;" ngModel required>
+            <br>
+            <span *ngIf="refusrn.invalid && refusrn.touched" style="width: 100px; display: inline;">
+                <span class="alert alert-danger" *ngIf="refusrn.hasError('required')"
+                    style="position: absolute; top: 46%; left: 48%;">
+                    This field is important.
+                </span>
+                <span class="alert alert-danger" *ngIf="refusrn.hasError('pattern')"
+                    style="position: absolute; top: 46%; left: 48%;">
+                    name should character and within 3 to 30
+                </span>
+
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <br><br>
+            <input type="password" name="pass" [(ngModel)]="pass" #refpass="ngModel" class="form-control"
+                style="margin-left: -50px; width: 190px;" pattern="^({8,})(\d)([a-z])([A-Z])(?!.*\s)[0-9a-zA-Z!@#$%^&*()]" ngModel required>
+            <br>
+            <span *ngIf="refpass.invalid && refpass.touched" style="width: 100px; display: inline;">
+                <span class="alert alert-danger" *ngIf="refusrn.hasError('required')"
+                    style="position: absolute; top: 60%; left: 48%;">
+                    This field is important.
+                </span>
+                <span class="alert alert-danger" *ngIf="refpass.hasError('pattern')"
+                    style="position: absolute; top: 64%; left: 48%;">
+                    Password should contain character, symbols & numbers 
+                </span>
+            </span>
+         
+        </div>
+        <button type="button" class="btn btn-outline-success" (click)="check()" style="padding-left: 15px;padding-right: 20px;"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Login</button>
+    </form>
+
+</div>

@@ -1,0 +1,46 @@
+<form #instData="ngForm" (ngSubmit)="sendData(instData.value)">
+    <h3 style="text-align: center;"><i class="fa fa-university" aria-hidden="true"></i>&nbsp; Edit Institute Details &nbsp;<i class="fa fa-university" aria-hidden="true"></i></h3>
+    <br>
+    <div class="from-group">
+        <label>New Branch Name:</label>
+        <input type="text" name="branch" #refbranch="ngModel" pattern="[a-zA-Z ]{3,30}" class="form-control"
+            [ngModel]="instObj?.branch" required>
+        <div *ngIf="refbranch.invalid && refbranch.touched">
+            <div class="alert alert-danger" *ngIf="refbranch.hasError('required')">
+                This Field is Required
+            </div>
+            <div class="alert alert-danger" *ngIf="refbranch.hasError('pattern')">
+                Branch name only contain characters
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="from-group">
+        <label>Enter the City:</label>
+        <input type="text" name="city" #refcity="ngModel" class="form-control" [ngModel]="instObj?.city" required>
+        <div *ngIf="refcity.invalid && refcity.touched">
+            <div class="alert alert-danger" *ngIf="refcity.hasError('required')">
+                This Field is Required
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="from-group">
+        <label>Enter Contact No:</label>
+        <input type="tel" name="contact" #refcontact="ngModel" pattern="[789][0-9]{9}" class="form-control"
+            [ngModel]="instObj?.contact" required>
+        <div *ngIf="refcontact.invalid && refcontact.touched">
+            <div class="alert alert-danger" *ngIf="refcontact.hasError('required')">
+                This Field is Required
+            </div>
+            <div class="alert alert-danger" *ngIf="refcontact.hasError('pattern')">
+                Contact must contain Numbers only
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+</form>

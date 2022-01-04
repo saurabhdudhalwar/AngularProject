@@ -1,0 +1,11 @@
+<div class="h1">
+    <img class="h2" src="../../assets/logo.png" alt="logo">
+    <div class="h3">&#8636; Passion Education &#8640;</div>
+
+    <button type="button" class="btn btn-outline-light h5" routerLink="login">Login</button>
+    <div style="display: inline; float: right;" class="h6"
+        *ngIf="_router.url!='/' && _router.url!='/login' && _router.url!='/**' && _router.url!='/register'">
+        <span style="color: orangered;">Login user &#8621; </span>
+        <span style="color: white;">{{userLog}} &nbsp;&nbsp;</span>
+    </div>
+</div>

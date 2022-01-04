@@ -1,0 +1,26 @@
+<div class="head">List of Users</div>
+<div  style="float: right;">SearchRecord &nbsp;<i class="fa fa-search" aria-hidden="true"></i>&nbsp;<input type="text" name="search" [(ngModel)]="searchRecord" placeholder="search here"></div>
+<table class="table table-striped table-hover" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Contact</th>
+            <th>Edit User</th>
+            <th>Delete User</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usr of user |filter:searchRecord | paginate: { itemsPerPage: 7, currentPage: p }">
+            <td>{{usr.id}}</td>
+            <td>{{usr.user}}</td>
+            <td>{{usr.password}}</td>
+            <td>{{usr.contact}}</td>
+            <td><button type="button" class="btn btn-outline-success" [routerLink]="['/','edituser',usr.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+            <td><button type="button" class="btn btn-outline-danger" (click)="deleteData(usr.id)"><i class="fa fa-trash-o" aria-hidden="true"></i></button></td>
+        </tr>
+    </tbody>
+</table>
+<pagination-controls (pageChange)="p = $event" style="float: right;"></pagination-controls>
+

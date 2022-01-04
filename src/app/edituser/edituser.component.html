@@ -1,0 +1,51 @@
+<form #usrData="ngForm" (ngSubmit)="sendData(usrData.value)">
+    <h3 style="text-align: center;">Register New User</h3>
+    <br>
+    <div class="from-group">
+        <label>Username</label>
+        <br>
+        <input type="text" name="user" #refusrn="ngModel" class="form-control" pattern="[a-zA-Z ]{3,30}"
+            [ngModel]="usrObj?.user" required>
+        <div *ngIf="refusrn.invalid && refusrn.touched">
+            <div class="alert alert-danger" *ngIf="refusrn.hasError('required')">
+                This field is important.
+            </div>
+            <div class="alert alert-danger" *ngIf="refusrn.hasError('pattern')">
+                name should character and within 3 to 30
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="from-group">
+        <label>Password</label>
+        <br>
+        <input type="password" name="password" class="form-control" #refpass="ngModel"
+            pattern="^({8,})(\d)([a-z])([A-Z])(?!.*\s)[0-9a-zA-Z!@#$%^&*()]" [ngModel]="usrObj?.password" required>
+        <div *ngIf="refpass.invalid && refpass.touched">
+            <div class="alert alert-danger" *ngIf="refusrn.hasError('required')">
+                This field is important.
+            </div>
+            <div class="alert alert-danger" *ngIf="refpass.hasError('pattern')">
+                Password should contain character, symbols & numbers
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="from-group">
+        <label>Conatact No.</label>
+        <input type="tel" name="contact" #refcont="ngModel" pattern="[789][0-9]{9}" class="form-control"
+            [ngModel]="usrObj?.contact" required>
+        <div *ngIf="refcont.invalid && refcont.touched">
+            <div class="alert alert-danger" *ngIf="refcont.hasError('required')">
+                This field is important
+            </div>
+            <div class="alert alert-danger" *ngIf="refcont.hasError('pattern')">
+                Contact should contain numbers only
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div style="text-align: center;">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+</form>

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+    <div class="container">
+        <app-logout *ngIf="_router.url!='/' && _router.url!='/login' && _router.url!='/**'"></app-logout>
+    </div>
+    <div class="nav" *ngIf="_router.url!='/' && _router.url!='/login' && _router.url!='/**'">
+        <app-nav *ngIf="_router.url!='/' && _router.url!='/login' && _router.url!='/**'"></app-nav>
+    </div>
+    <div class="body" *ngIf="_router.url!='/login' && _router.url!='/**'" >        
+        <router-outlet *ngIf="_router.url!='/login' && _router.url!='/**'"></router-outlet>
+    </div>
+    <div class="container footer">
+       <span style="float: right;">This Webapp Design & Developed by Saurabh Dudhalwar</span>
+    </div>
+</div>

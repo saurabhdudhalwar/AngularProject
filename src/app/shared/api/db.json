@@ -1,0 +1,244 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "user": "admin",
+      "password": "admin@123",
+      "contact": "8224521682"
+    },
+    {
+      "id": 2,
+      "user": "saurabh",
+      "password": "saurabh@123",
+      "contact": 822452166
+    },
+    {
+      "id": 3,
+      "user": "vishal",
+      "password": "vishal@123",
+      "contact": 822452166
+    },
+    {
+      "user": "chintu",
+      "password": "pass@123",
+      "contact": "840545953",
+      "id": 4
+    },
+    {
+      "user": "test",
+      "password": "test@123",
+      "contact": "8522623878",
+      "id": 5
+    },
+    {
+      "user": "hydra",
+      "password": "hydra123",
+      "contact": "84451621585",
+      "id": 6
+    }
+  ],
+  "students": [
+    {
+      "id": 101,
+      "stdName": "Saurabh Dudhalwar",
+      "contact": 9876543210,
+      "stdEmail": "saurabhdudhalwar@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "MPGI SOE",
+      "city": "Aurangabad"
+    },
+    {
+      "id": 102,
+      "stdName": "Vishal Devenpally",
+      "contact": 9876543210,
+      "stdEmail": "vishaldevenpalli@gmail.com",
+      "specialization": "Computer Engg",
+      "collage": "COEP SOE",
+      "city": "mumbai"
+    },
+    {
+      "id": 103,
+      "stdName": "Yogesh Lendewad",
+      "contact": 9876543210,
+      "stdEmail": "yogeshlendewad@gmail.com",
+      "specialization": "Mechanical Engg",
+      "collage": "MPGI SOE",
+      "city": "nagpur"
+    },
+    {
+      "id": 104,
+      "stdName": "Suraj Ingole",
+      "contact": 9876543210,
+      "stdEmail": "surajingole@gmail.com",
+      "specialization": "IT Engg",
+      "collage": "IIT PUNE",
+      "city": "Nanded"
+    },
+    {
+      "id": 105,
+      "stdName": "sumit sonkamble",
+      "contact": 8522623878,
+      "stdEmail": "sumitsonkamble@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "SSS IIT NANDED",
+      "city": "Pune"
+    },
+    {
+      "id": 106,
+      "stdName": "Saurabh Patherkar",
+      "contact": 8522623878,
+      "stdEmail": "saurabhpatherkar@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "MPGI SOE",
+      "city": "pune"
+    },
+    {
+      "id": 107,
+      "stdName": "vitthal suvarnakar",
+      "contact": 8522623878,
+      "stdEmail": "vitthalS@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "MPGI SOE",
+      "city": "Aurangabad"
+    },
+    {
+      "id": 108,
+      "stdName": "Raj Yadav",
+      "contact": 8522623878,
+      "stdEmail": "rajyadav@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "MPGI SOE",
+      "city": "mumbai"
+    },
+    {
+      "id": 109,
+      "stdName": "Gaurav Dudhalwar",
+      "contact": 8522623878,
+      "stdEmail": "gauravdudhalwar@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "IIT PUNE",
+      "city": "Pune"
+    },
+    {
+      "id": 110,
+      "stdName": "ajinkya shakarwar",
+      "contact": 8522623878,
+      "stdEmail": "ajshakarwar@gmail.com",
+      "specialization": "Electrical Engg",
+      "collage": "MPGI SOE",
+      "city": "Nanded"
+    }
+  ],
+  "institute": [
+    {
+      "id": 1,
+      "branch": "Shivaji Nagar",
+      "city": "Nanded",
+      "contact": 8581226102
+    },
+    {
+      "id": 2,
+      "branch": "Shree Nagar",
+      "city": "Nanded",
+      "contact": 9487246325
+    },
+    {
+      "id": 3,
+      "branch": "Cidco",
+      "city": "Aurangabad",
+      "contact": 8581226102
+    },
+    {
+      "id": 4,
+      "branch": "Sadashiv Path",
+      "city": "Pune",
+      "contact": 8581226102
+    },
+    {
+      "id": 5,
+      "branch": "wagholi",
+      "city": "pune",
+      "contact": 8581226102
+    },
+    {
+      "id": 6,
+      "branch": "Shree nagar",
+      "city": "nagpur",
+      "contact": 8581226102
+    },
+    {
+      "id": 7,
+      "branch": "jayprakash nagar",
+      "city": "mumbai",
+      "contact": 8581226102
+    },
+    {
+      "id": 9,
+      "branch": "bangur nagar",
+      "city": "mumbai",
+      "contact": 8581226102
+    },
+    {
+      "id": 10,
+      "branch": "Shivaji Nagar",
+      "city": "Nanded",
+      "contact": 8581226102
+    }
+  ],
+  "course": [
+    {
+      "id": 1,
+      "course": "Full Stack Developer",
+      "duration": "6 Month",
+      "fees": 80000
+    },
+    {
+      "id": 2,
+      "course": "Mean Stack Developer",
+      "duration": "5 Month",
+      "fees": 40000
+    },
+    {
+      "id": 3,
+      "course": "mern Stack Developer",
+      "duration": "6 Month",
+      "fees": 40000
+    },
+    {
+      "id": 4,
+      "course": "Java Developer",
+      "duration": "8 Month",
+      "fees": 120000
+    },
+    {
+      "id": 5,
+      "course": "C language",
+      "duration": "6 Month",
+      "fees": 40000
+    },
+    {
+      "id": 6,
+      "course": "C ++",
+      "duration": "6 Month",
+      "fees": 40000
+    },
+    {
+      "id": 7,
+      "course": "Python Developer",
+      "duration": "8 Month",
+      "fees": 60000
+    },
+    {
+      "id": 9,
+      "course": "SQL",
+      "duration": "9 Month",
+      "fees": 140000
+    },
+    {
+      "course": "No SQL",
+      "duration": "6 month",
+      "fees": 85000,
+      "id": 10
+    }
+  ]
+}

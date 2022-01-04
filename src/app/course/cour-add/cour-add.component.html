@@ -1,0 +1,31 @@
+<form #courData="ngForm" (ngSubmit)="sendData(courData.value)">
+    <h3 style="text-align: center;"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Add Courses &nbsp;<i class="fa fa-book" aria-hidden="true"></i></h3>
+    <div class="from-group">
+        <label>Name of course:</label>
+        <input type="text" name="course" #refcourse="ngModel" class="form-control" ngModel required>
+        <div *ngIf="refcourse.invalid && refcourse.touched">
+            <div class="alert alert-danger" *ngIf="refcourse.hasError('required')">
+                This Field is Required
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="from-group">
+        <label>Duration of Course:</label>
+        <input type="text" name="duration" #refduration="ngModel" class="form-control" ngModel required>
+        <div *ngIf="refduration.invalid && refduration.touched">
+            <div class="alert alert-danger" *ngIf="refduration.hasError('required')">
+                This Field is Required
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="from-group">
+        <label>Fees Required:</label>
+        <input type="number" name="fees" reffeees="ngModel" class="form-control" ngModel required>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+</form>
